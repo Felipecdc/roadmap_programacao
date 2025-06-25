@@ -1,0 +1,59 @@
+Lógica de programação: É o raciocínio usado para criar um algoritmo capaz de resolver um problema por meio de uma intrução, com operações sequênciais, decisões e repetições.
+. Algoritmos: É uma sequência finita de intruções lógicas para resolver problemas e tarefas, representado por pseudocódigo ou fluxograma.
+. Fluxogramas: É uma representação gráfica de algoritmos usando símbolos padronizados.
+. Depuração: É o processo de encontrar e corrigir erros no código. Pode envolver breakpoints, logs, e testes.
+
+Desenvolvimento Web:
+. HTTP Request: É uma requesição feito pelo cliente(web) para o servidor(api).
+. REST: É uma arquitetura para APIs, usa métodos HTTP, efetua um CRUD basando em uma URL, e deve ser stateless.
+. Web Services: REST e SOAP. Serviços que permitem comunicação via sistemas na rede
+. Headers:
+. Status Codes: []
+
+Orientação a Objetos: Cria um objeto reutilizavel e define o que ele é e o que ele faz.
+. Classes: É um modelo que define a estrutura e comportamento de um objeto.
+. Atributos: São as variáveis internas das classes.
+. Métodos: São funções dentro das classes.
+. Herança: Permite herdar atributos e métodos de outra classe.
+. Polimorfismo: Permite usar um método de formas diferentes.
+. Encapsulamento:
+. Abstrações:
+
+HTML5: É uma linguagem de marcação, o padrao de estrutural de paginas web.
+CSS: Define o estilo de elementos HTML, como cores, tamanhos e etc.
+
+JSON: Formato estutural de chave:valor para troca de dados. Usado em API e bancos locais
+JQuery: Biblioteca javascript para manipulação do DOM, AJAX e efeitos.
+VueJS: Framework javascript para construção de interfaces reativas. Usa diretivas como v-if, v-for etc.
+PHP8: Linguagem de script do lado do servidor, usada para desenvolvimento web, v8 possui recursos como match, atributos, compilador JIT e tipagem.
+Javascript: Linguagem de programação multiplataforma, interpreta o DOM, faz requisição, trata eventos, suporta POO e etc.
+Git: Sistema de controle de versão do código. Comandos básicos = git init, git branch, git push...
+Docker - Instalação e configuração: Ferramenta para criar containers e simular um servidor local, usa docker-file e docker-compose.
+
+Conceitos de Banco de Dados:
+. Modelo entidade relacionamento: Representa uma entidade (cliente) e seus relacionamentos (pedido, carrinho).
+. Diagrama entidade relacionamento: É o desenho do modelo ER com símbolos.
+. Normalização: Processo para reduzir redundância e dependência.
+. Segurança: Envolve controle de acesso e criptografia dos dados.
+. Integridade referencial: Garante que a foreign key referencie registros validos.
+. Baackup:
+. Índice:
+. ACID: Atomicidade, Consistência, Isolamento e Durabilidade
+. Transação:
+
+SQL:2023 or ISO/IEC 9075:2023: Versão do SQL
+. Comandos:
+  [
+    {
+      SELECT,
+      INSERT,
+      UPDATE,
+      DELETE,
+      JOIN,
+      GROUP BY,
+      HAVING,
+      CREATE,
+      FOREIGN KEY,
+      PRIMARY KEY,
+    },
+  ]
