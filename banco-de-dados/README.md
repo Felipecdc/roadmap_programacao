@@ -54,15 +54,126 @@ Indica a quantidade de relacionamentos possíveis entre as entidades:
 
 ---
 
-## 🧹 Normalização \*\*\*\* estudar mais esse
+## 🧹 Normalização
 
-Processo que visa **reduzir redundância e dependência de dados**, organizando as tabelas em formas normais.
+Processo que visa utilizar banco relacional para **evitar redundância, inconsistência e dependência de dados**, organizando as tabelas em formas normais.
+
+### 🎯 Objetivos da Normalização
+
+- Separar dados em **múltiplas tabelas** com relacionamentos bem definidos.
+- Garantir que cada **dado esteja no lugar certo**, apenas uma vez.
+- **Facilitar atualizações, inserções e exclusões** sem erros ou perdas.
+
+### Formas Normais
 
 <details>
-  <summary>💬 Explicação</summary>
+<summary>1FN</summary>
 
-Existem várias formas normais (1FN, 2FN, 3FN...).  
-A ideia é **evitar repetição de dados**, separar em tabelas distintas e manter consistência.
+### ✅ 1FN (Primeira Forma Normal)
+
+> Garante que cada coluna tenha **valores atômicos** (um único valor por célula).
+
+**❌ Exemplo NÃO normalizado:**
+
+| ID  | Nome | Telefones            |
+| --- | ---- | -------------------- |
+| 1   | João | 9999-1111, 9999-2222 |
+
+**✅ Correto (1FN):**
+
+| ID  | Nome | Telefone  |
+| --- | ---- | --------- |
+| 1   | João | 9999-1111 |
+| 1   | João | 9999-2222 |
+
+</details>
+
+<details>
+<summary>2FN</summary>
+
+### ✅ 2FN (Segunda Forma Normal)
+
+> Remove **dependências parciais** de uma chave primária composta.
+
+**❌ Exemplo com dependência parcial:**
+
+| PedidoID | ProdutoID | NomeProduto | Quantidade |
+| -------- | --------- | ----------- | ---------- |
+| 1        | 101       | Mouse       | 2          |
+
+> `NomeProduto` depende apenas de `ProdutoID`, não da chave completa.
+
+**✅ Correto (2FN):**
+
+**Produtos:**
+
+| ProdutoID | NomeProduto |
+| --------- | ----------- |
+| 101       | Mouse       |
+
+**Pedidos:**
+
+| PedidoID | ProdutoID | Quantidade |
+| -------- | --------- | ---------- |
+| 1        | 101       | 2          |
+
+</details>
+
+<details>
+<summary>3FN</summary>
+
+### ✅ 3FN (Terceira Forma Normal)
+
+> Remove **dependências transitivas**, ou seja, campos que dependem de outros que não são chave primária.
+
+**❌ Exemplo com dependência transitiva:**
+
+| ClienteID | NomeCliente | CPF         | Estado    | UF  |
+| --------- | ----------- | ----------- | --------- | --- |
+| 1         | João        | 123.456.789 | São Paulo | SP  |
+
+> `UF` depende de `Estado`, que não é chave primária.
+
+**✅ Correto (3FN):**
+
+**Clientes:**
+
+| ClienteID | NomeCliente | CPF         | Estado    |
+| --------- | ----------- | ----------- | --------- |
+| 1         | João        | 123.456.789 | São Paulo |
+
+**Estados:**
+
+| Estado    | UF  |
+| --------- | --- |
+| São Paulo | SP  |
+
+</details>
+
+<details>
+<summary>Resumo</summary>
+
+### 📦 Resumo Visual
+
+| Forma Normal | O que remove                          | Exemplo de correção                 |
+| ------------ | ------------------------------------- | ----------------------------------- |
+| 1FN          | Dados repetidos em uma célula         | Dividir em várias linhas            |
+| 2FN          | Dependência parcial da chave composta | Criar tabela separada para produtos |
+| 3FN          | Dependência entre colunas não-chave   | Criar tabela separada para estados  |
+
+</details>
+
+<details>
+<summary>Extra</summary>
+
+### 🧠 Existe além da 3FN?
+
+Sim. Existem:
+
+- **BCNF** (Forma Normal de Boyce-Codd): reforça regras da 3FN.
+- **4FN** e **5FN**: tratam dependências multivaloradas e junções mais complexas.
+
+> Para a maioria dos projetos, **até a 3FN já resolve bem** os problemas de modelagem e redundância.
 
 </details>
 
