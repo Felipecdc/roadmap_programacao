@@ -51,6 +51,7 @@ Sinta-se à vontade para clonar, adaptar e colaborar.
 **Felipe Castro**  
 Desenvolvedor e estudante de tecnologia  
 Conectado em aprender, compartilhar e passar nesse concurso 🚀
+<a href="https://www.linkedin.com/in/felipe-castro-039335267/">Meu LinkedIn</a>
 
 ---
 
