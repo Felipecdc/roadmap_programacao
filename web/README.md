@@ -12,11 +12,13 @@ Ele estabelece uma conexão entre cliente e servidor antes de enviar dados, divi
 ### ⚙️ Como funciona o TCP?
 
 <details>
+
 - **Conexão orientada:** cliente e servidor “fazem um handshake” para iniciar a comunicação.
 - **Divisão em pacotes:** os dados são fragmentados em pacotes menores para envio.
 - **Confirmação:** o receptor envia confirmações para garantir que os pacotes chegaram.
 - **Reenvio:** pacotes perdidos são reenviados automaticamente.
 - **Ordenação:** os pacotes são reorganizados no destino para formar a mensagem original.
+
 </details>
 
 ### 🖥️ Onde o TCP é usado?
