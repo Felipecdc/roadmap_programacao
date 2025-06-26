@@ -49,9 +49,9 @@ Sinta-se à vontade para clonar, adaptar e colaborar.
 ## ✍️ Autor
 
 **Felipe Castro**  
-Desenvolvedor e estudante de tecnologia  
-Conectado em aprender, compartilhar e passar nesse concurso 🚀
-<a href="https://www.linkedin.com/in/felipe-castro-039335267/">Meu LinkedIn</a>
+Desenvolvedor e estudante de tecnologia, sempre em busca de evolução.  
+Apaixonado por aprender, compartilhar conhecimento e conquistar a aprovação no concurso dos sonhos 🚀  
+[🔗 Acesse meu LinkedIn](https://www.linkedin.com/in/felipe-castro-039335267/)
 
 ---
 
