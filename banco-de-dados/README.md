@@ -267,6 +267,46 @@ COMMIT;
 
 </details>
 
+<details>
+  <summary>📌 Exemplo avançado com bloco DO (PostgreSQL)</summary>
+
+```sql
+DO
+$$
+BEGIN
+-- Debita da conta origem
+UPDATE contas SET saldo = saldo - 100 WHERE id = 1;
+IF NOT FOUND THEN
+  RAISE EXCEPTION 'Conta origem não encontrada';
+END IF;
+
+-- Credita na conta destino
+UPDATE contas SET saldo = saldo + 100 WHERE id = 2;
+IF NOT FOUND THEN
+  RAISE EXCEPTION 'Conta destino não encontrada';
+END IF;
+
+-- Se tudo ocorreu bem, o bloco termina e COMMIT é feito automaticamente
+
+EXCEPTION
+WHEN OTHERS THEN
+  -- Em caso de erro, toda a transação é cancelada (ROLLBACK automático)
+  RAISE; -- relança o erro para notificação
+END;
+$$;
+
+```
+
+📝 **Resumo:**
+
+- O bloco `DO $$ ... $$` permite escrever um código procedural que executa várias operações dentro de uma transação.
+- Se algum `UPDATE` não afetar linhas (conta inexistente), um erro é lançado e a transação é cancelada.
+- Se tudo der certo, o `COMMIT` é automático ao final do bloco.
+- Isso garante que as operações sejam feitas de forma segura e consistente.
+- O `WHEN OTHERS` captura todas as exceções não tratadas anteriormente, funcionando como um catch genérico.
+
+</details>
+
 ---
 
 ## 🗝️ Extra: Chave Primária
