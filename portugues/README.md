@@ -14,19 +14,19 @@ Feito para quem quer entender sem enrolação. Tudo com exemplos reais, explica�
 
 📌 Exemplo real:
 
-> \*Entreguei o relatório **à diretora.\***
+> _Entreguei o relatório **à diretora**._
 
 🔍 Por quê?
 
-- "Entreguei **a**" (quem entrega, entrega a alguém)
+- "Entreguei **a**" (quem entrega, entrega **a** alguém)
 - "a diretora" (feminino com artigo "a")
 - Resultado: **a + a = à**
 
 <details>
 <summary>🧠 O que é preposição e artigo?</summary>
 
-- **Preposição**: palavra que liga elementos → _Vou **a** escola_.
-- **Artigo definido**: acompanha o substantivo → _a escola, o aluno_.
+- **Preposição**: palavra que liga elementos → _Vou **a** escola._
+- **Artigo definido**: acompanha o substantivo → _a escola, o aluno._
 </details>
 
 ---
@@ -82,16 +82,14 @@ Feito para quem quer entender sem enrolação. Tudo com exemplos reais, explica�
 → _Prefiro café **a** suco._
 
 📌 Com palavra feminina → **crase**:  
-→ \*Prefiro música **à poesia.\***
+→ _Prefiro música **à poesia**._
 
 <details>
 <summary>🚫 Erros comuns</summary>
 
 - _Prefiro do que..._ ❌
-- _Prefiro mais que..._ ❌
-
+- _Prefiro mais que..._ ❌  
 ✅ O certo é: _Prefiro X **a** Y_
-
 </details>
 
 ---
@@ -127,9 +125,16 @@ Aí vira **pleonasmo literário**, usado em poesias ou músicas. Mas em prova de
 → _Dois minutos **faltam** para o fim do jogo._  
 → Sujeito = “dois minutos” → Verbo no plural
 
+<details>
+<summary>📎 O que é sujeito e verbo?</summary>
+
+- **Sujeito**: quem faz ou sofre a ação.
+- **Verbo**: a própria ação. Ex: correr, ser, estudar.
+</details>
+
 ---
 
-### ⚠️ Verbos impessoais – Sempre no singular!
+### ⚠️ **Verbos impessoais – Sempre no singular!**
 
 Alguns verbos **não têm sujeito**, então ficam no **singular**, mesmo se parecer plural:
 
@@ -148,14 +153,64 @@ Se a frase fala de **tempo** ou **existência**, desconfie:
 
 ---
 
+### 💬 **Os 4 “Porquês” (sempre cai!)**
+
+| Forma       | Uso                               | Exemplo                           |
+| ----------- | --------------------------------- | --------------------------------- |
+| **por que** | início de pergunta                | _Por que você saiu?_              |
+| **porque**  | explicação/resposta               | _Saí porque estava cansado._      |
+| **por quê** | final de pergunta                 | _Você saiu por quê?_              |
+| **porquê**  | substitui “o motivo” (com artigo) | _Ninguém sabe o porquê da saída._ |
+
+---
+
+### 🧱 **Classes Gramaticais Básicas – O que compõe as frases**
+
+| Classe      | Exemplo            | Função                            |
+| ----------- | ------------------ | --------------------------------- |
+| Verbo       | correr, estudar    | mostrar uma **ação**              |
+| Substantivo | aluno, sistema     | nomear pessoas, coisas, ideias    |
+| Adjetivo    | rápido, complexo   | expressar uma **característica**  |
+| Advérbio    | muito, rapidamente | modificar verbo: modo, tempo etc. |
+
+---
+
+### 🧩 **Termos da Oração – Quem faz o quê**
+
+| Termo             | O que faz                                         |
+| ----------------- | ------------------------------------------------- |
+| Sujeito           | quem faz a ação → _Maria correu._                 |
+| Predicado         | o que se diz do sujeito → _correu no parque_      |
+| Objeto direto     | complemento sem preposição → _Vi o filme._        |
+| Objeto indireto   | complemento com preposição → _Gosto **de** café._ |
+| Adjunto adverbial | indica tempo, modo, lugar → _Chegou cedo._        |
+
+---
+
+### 🔗 **Conjunções – Como ligamos ideias**
+
+| Tipo         | Exemplo                               | Função            |
+| ------------ | ------------------------------------- | ----------------- |
+| Adição       | _Estudo **e** trabalho._              | juntar ideias     |
+| Causa        | _Não veio **porque** choveu._         | mostrar motivo    |
+| Consequência | _Estudou tanto **que** passou._       | mostrar resultado |
+| Condição     | _Se chover, não saio._                | indicar hipótese  |
+| Oposição     | _Gosto de café, **mas** prefiro chá._ | ideia contrária   |
+
+---
+
 ## 📌 Resumo Rápido
 
 - **Crase = a + a → à** (preposição + artigo feminino)
 - **Figuras**: metáfora (comparação), personificação (vida aos objetos), hipérbole (exagero)
-- **Preferir**: usa **a**, não "do que"
+- **Preferir**: usa **a**, nunca "do que"
 - **Pleonasmo**: repetições inúteis → evite!
 - **Concordância**: sujeito + verbo combinando
 - **Verbos impessoais**: sempre no singular
+- **Porquês**: saiba quando usar “por que”, “porque”, “por quê”, “porquê”
+- **Classes gramaticais**: verbo, substantivo, adjetivo, advérbio
+- **Termos da oração**: sujeito, predicado, objetos, adjunto
+- **Conjunções**: ligam ideias (e, mas, porque, se...)
 
 ---
 

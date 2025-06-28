@@ -24,6 +24,20 @@ Cada tópico é documentado em um arquivo `.md` separado, com explicações obje
 | `desenvolvimento-web.md` | Conceitos de HTTP, REST, web services, headers, status codes           |
 | `poo.md`                 | Programação orientada a objetos: classes, herança, encapsulamento etc. |
 | `banco-de-dados.md`      | Modelo ER, normalização, ACID, transações, segurança e SQL básico      |
+| `portugues.md`           | Conteúdos essenciais de português focado em concursos                  |
+
+### ✍️ Conteúdos de Português
+
+- **Crase = a + a → à** (preposição + artigo feminino)
+- **Figuras de linguagem**: metáfora, personificação, hipérbole
+- **Preferir**: usa **a**, nunca “do que”
+- **Pleonasmo**: repetições inúteis → evite!
+- **Concordância**: sujeito + verbo combinando corretamente
+- **Verbos impessoais**: sempre no singular
+- **Porquês**: por que, porque, por quê, porquê
+- **Classes gramaticais**: verbo, substantivo, adjetivo, advérbio
+- **Termos da oração**: sujeito, predicado, objetos, adjunto
+- **Conjunções**: e, mas, porque, se...
 
 ---
 
@@ -39,10 +53,37 @@ Durante o estudo, também são abordados assuntos como:
 
 ---
 
-## 📌 Observações
+## 🗓️ Plano de Estudo (exemplo)
 
-Este repositório **não substitui materiais oficiais**, mas serve como um **guia complementar e prático** de estudo.  
-Sinta-se à vontade para clonar, adaptar e colaborar.
+Estudo com ênfase na constância e equilíbrio entre teoria e prática:
+
+| Dia     | Matéria                         | Foco                                                            |
+| ------- | ------------------------------- | --------------------------------------------------------------- |
+| Segunda | Programação + Português         | Lógica de programação + Classes gramaticais e verbos impessoais |
+| Terça   | Banco de Dados                  | Normalização, SQL, transações                                   |
+| Quarta  | Desenvolvimento Web + Português | HTTP, REST, status codes + Crase e Porquês                      |
+| Quinta  | Programação + POO               | Algoritmos + Herança, Polimorfismo                              |
+| Sexta   | Revisão geral + Questões        | Revisar tudo e fazer questões práticas                          |
+| Sábado  | Simulado + Redação/Leitura      | Treino de tempo + Interpretação de texto                        |
+| Domingo | ❌ Descanso ou revisão leve     | Apenas leitura ou flashcards caso queira manter ritmo           |
+
+> 📌 **Adapte conforme seu ritmo. O essencial é manter o movimento.**
+
+---
+
+## 🚀 Dicas Finais
+
+🔎 **Questões com alternativas parecidas? Use este filtro:**
+
+- Corte as que estão obviamente erradas
+- Elimine as "exageradas" (sempre, nunca, etc.)
+- Veja o que o enunciado realmente pede (às vezes ele nega ou afirma algo)
+- Compare as opções restantes com calma
+- Se ainda estiver em dúvida: escolha a mais simples e gramaticalmente "neutra" — concursos geralmente não erram com frases básicas bem construídas
+
+💡 **Estudo sem estresse**:  
+Se hoje só der pra revisar, revise. Amanhã você pratica.  
+O importante é o movimento contínuo. Pequenos passos todos os dias valem mais do que grandes saltos uma vez por mês.
 
 ---
 
