@@ -103,6 +103,33 @@ git commit -m "mensagem descritiva do commit"
 ---
 
 <details>
+<summary><strong>📋 git status</strong></summary>
+
+Mostra o estado atual da árvore de trabalho e da **staging area**.
+
+```bash
+git status
+```
+
+📝 **Usar quando:** você quer verificar quais arquivos foram modificados, adicionados, removidos ou estão prontos para commit.
+
+📌 **Depois de:** modificar arquivos, usar `git add`, ou antes de fazer commit.  
+📌 **Antes de:** `git add` (para saber o que precisa ser adicionado) ou `git commit` (para conferir o que será salvo).
+
+📌 Também mostra:
+
+- Quais arquivos estão **não versionados**
+- Quais estão no **staging**
+- Quais estão **modificados** mas ainda não adicionados
+- Em qual **branch** você está
+
+❗ **Importante:** `git status` **não altera nada** — é apenas para visualização.
+
+</details>
+
+---
+
+<details>
 <summary><strong>📤 git push</strong></summary>
 
 Envia os commits locais para o repositório remoto.
