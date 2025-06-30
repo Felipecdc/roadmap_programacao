@@ -129,6 +129,12 @@ function verificarIdade(idade) {
 }
 ```
 
+### 🔧 DevTools:
+
+É um conjunto de ferramentas de desenvolvedor embutido no navegador, usado para inspecionar código, ver logs e depurar JavaScript. `(ctrl + F12)`
+
+No exemplo acima, o comando debugger; faz com que o navegador pause a execução nesse ponto caso o DevTools esteja aberto, permitindo ao desenvolvedor inspecionar variáveis e o fluxo do código antes de continuar.
+
 </details>
 
 ---
