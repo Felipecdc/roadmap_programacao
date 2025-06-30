@@ -35,6 +35,9 @@
 <summary>🐳 Imagens</summary>
 
 ```bash
+# Baixar uma imagem do Docker Hub (exemplo: nginx)
+docker pull nome-imagem
+
 # Criar imagem a partir do Dockerfile na pasta atual, com tag
 docker build -t minha-imagem:1.0 .
 
@@ -47,6 +50,12 @@ docker images
 docker rmi minha-imagem:1.0
 
 ```
+
+### O que é uma imagem no Docker?
+
+Uma imagem é um modelo pronto de um ambiente.
+Ela define tudo que um container precisa para rodar: sistema operacional, dependências, bibliotecas, arquivos do projeto, scripts de configuração etc.
+É como um “pacote fechado” com tudo que o projeto precisa para funcionar.
 
 </details>
 
@@ -81,6 +90,12 @@ docker logs <container_id>
 docker exec -it <container_id> /bin/bash
 
 ```
+
+### O que é um contêiner Docker?
+
+Um contêiner é uma instância em execução de uma imagem.
+Ele é como uma cópia viva da imagem, isolada e pronta para ser executada, onde o aplicativo realmente roda.
+Você usa a imagem como base e, ao rodar o `docker run`, o Docker cria um contêiner com tudo que está definido na imagem.
 
 </details>
 
@@ -118,7 +133,7 @@ CMD ["npm", "start"]
 
 ### O que é o Dockerfile?
 
-É um arquivo de texto com instruções para construir uma imagem Docker, definindo a base, cópias de arquivos, instalação de dependências, comandos para rodar e mais.
+É um arquivo de texto com instruções para construir uma imagem Docker com base no nosso container, definindo a base, cópias de arquivos, instalação de dependências, comandos para rodar e mais.
 
 ### Principais comandos Dockerfile
 
@@ -184,6 +199,19 @@ docker volume rm meu-volume
 
 ```
 
+### O que são Volumes no Docker?
+
+Volumes são diretórios especiais criados e gerenciados pelo Docker no sistema local `(seu PC)`, usados para armazenar dados de forma persistente fora do ciclo de vida dos containers.
+
+Eles garantem que os dados (como arquivos, bancos de dados, configurações) não sejam perdidos quando o container parar ou for removido.
+
+| Aspecto            | Volume Docker                                          |
+| ------------------ | ------------------------------------------------------ |
+| Tipo               | Diretório no sistema local                             |
+| Localização típica | `/var/lib/docker/volumes/` (Linux)                     |
+| Conteúdo           | Depende do container (banco, arquivos, configs)        |
+| Persistência       | Dados permanecem após container ser parado ou removido |
+
 </details>
 
 ---
@@ -202,6 +230,42 @@ docker network create minha-rede
 docker run -d --network minha-rede minha-imagem
 
 ```
+
+### O que são redes no Docker?
+
+Redes Docker permitem que containers se comuniquem entre si de forma isolada e segura. Ao criar uma rede customizada, você define um ambiente onde vários containers podem se conectar e trocar dados, como se estivessem numa mesma rede local.
+
+Isso é essencial para arquiteturas onde vários serviços (bancos, APIs, front-end) precisam se comunicar sem expor portas diretamente para o host.
+
+<details>
+<summary>🐳 Exemplo de ligação entre containers com rede Docker</summary>
+
+### Passo 1 - Criar uma `rede` customizada
+
+```bash
+docker network create my-network
+```
+
+### Passo 2 - Criar dois container na mesma rede
+
+```bash
+# Rodar container da aplicação que vai acessar o banco
+docker run -d --name my-postgres --network my-network -e POSTGRES_PASSWORD=suasenha postgres
+
+# Rodar container da aplicação que vai acessar o banco
+docker run -d --name my-app --network my-network my-image
+```
+
+### Passo 3: Na aplicação, usar o nome do container do banco como host
+
+```env
+DB_HOST=meu-postgres
+DB_PORT=5432
+DB_USER=postgres
+DB_PASSWORD=senha
+```
+
+</details>
 
 </details>
 
@@ -250,6 +314,16 @@ docker compose down       # Para e remove containers, redes, volumes criados
 docker compose logs       # Ver logs dos serviços
 docker compose ps         # Listar serviços em execução
 ```
+
+### O que é o Docker Compose?
+
+O Docker Compose é uma ferramenta para definir e rodar um ou vários containers Docker juntos, usando um arquivo YAML.
+
+Ele é muito usado para:
+
+- Orquestrar múltiplos serviços (como backend, banco de dados, cache)
+- Criar redes customizadas para que esses containers se comuniquem facilmente
+- Gerenciar volumes e configurações de forma centralizada
 
 </details>
 
