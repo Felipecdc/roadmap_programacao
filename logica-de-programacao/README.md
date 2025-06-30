@@ -15,7 +15,35 @@ Ele pode ser representado por:
 ### Exemplos
 
 <details>
-<sumary></sumary>
+<summary>Exemplo de Pseudocódigo – Verificar se número é par ou ímpar</summary>
+
+```plaintext
+Início
+  Ler número
+  Se número % 2 == 0 então
+    Escrever "Número é par"
+  Senão
+    Escrever "Número é ímpar"
+Fim
+```
+
+</details>
+
+---
+
+<details>
+<summary>Exemplo de Algoritmo em Código – Python</summary>
+
+```py
+numero = int(input("Digite um número: "))
+
+if numero % 2 == 0:
+    print("Número é par")
+else:
+    print("Número é ímpar")
+
+```
+
 </details>
 
 ---
@@ -34,7 +62,24 @@ Fluxogramas são **representações gráficas de algoritmos**, usando símbolos 
 ### Exemplos
 
 <details>
-<sumary></sumary>
+<sumary>Exemplo de Fluxograma – Verificar idade para votar</sumary>
+
+```plaintext
+         🔷 Início
+             ↓
+        🟩 Ler idade
+             ↓
+      🔺 Idade ≥ 16?
+         /       \
+       Sim       Não
+       ↓          ↓
+🟩 Pode votar   🟩 Não pode votar
+       ↓          ↓
+          🔷 Fim
+
+
+```
+
 </details>
 
 ---
@@ -54,7 +99,36 @@ Ferramentas e técnicas comuns:
 ### Exemplos
 
 <details>
-<sumary></sumary>
+<sumary>Exemplo de uso de print (log) para depuração – Python</sumary>
+
+```py
+def soma(a, b):
+    print(f"Somando {a} + {b}")  # log
+    return a + b
+
+resultado = soma(5, 3)
+print("Resultado:", resultado)
+
+```
+
+</details>
+
+---
+
+<details>
+<sumary>Exemplo de uso de breakpoint – JavaScript </sumary>
+
+```javascript
+function verificarIdade(idade) {
+  debugger; // pausa a execução se o DevTools estiver aberto
+  if (idade >= 18) {
+    return "Maior de idade";
+  } else {
+    return "Menor de idade";
+  }
+}
+```
+
 </details>
 
 ---
