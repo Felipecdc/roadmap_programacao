@@ -62,7 +62,7 @@ Fluxogramas são **representações gráficas de algoritmos**, usando símbolos 
 ### Exemplos
 
 <details>
-<sumary>Exemplo de Fluxograma – Verificar idade para votar</sumary>
+<summary>Exemplo de Fluxograma – Verificar idade para votar</summary>
 
 ```plaintext
          🔷 Início
@@ -99,7 +99,7 @@ Ferramentas e técnicas comuns:
 ### Exemplos
 
 <details>
-<sumary>Exemplo de uso de print (log) para depuração – Python</sumary>
+<summary>Exemplo de uso de print (log) para depuração – Python</summary>
 
 ```py
 def soma(a, b):
@@ -116,7 +116,7 @@ print("Resultado:", resultado)
 ---
 
 <details>
-<sumary>Exemplo de uso de breakpoint – JavaScript </sumary>
+<summary>Exemplo de uso de breakpoint – JavaScript </summary>
 
 ```javascript
 function verificarIdade(idade) {
