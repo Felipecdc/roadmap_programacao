@@ -363,6 +363,44 @@ export default {
 
 </details>
 
+<details>
+<summary>🚀 Nova Sintaxe do Vue 3 – <code>&lt;script setup&gt;</code> e <code>&lt;style scoped&gt;</code></summary>
+
+O Vue 3 trouxe uma forma mais simples e moderna de escrever componentes usando <code>&lt;script setup&gt;</code>.  
+Este formato torna o código mais limpo e direto, sem precisar declarar explicitamente a função `setup()`
+
+Além disso, o <code>&lt;style scoped&gt;</code> garante que o CSS do componente só afete aquele componente, evitando vazamento de estilos para outras partes da aplicação.
+
+```js
+<template>
+  <div>
+    <h2>{{ titulo }}</h2>
+    <button @click="contador++">Cliquei {{ contador }} {{ contador === 1 ? 'vez' : 'vezes'}}</button>
+  </div>
+</template>
+
+<script setup>
+import { ref } from "vue";
+
+const titulo = "Meu Componente";
+const contador = ref(0);
+</script>
+
+<style scoped>
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+</style>
+```
+
+🔍 Perfeito para chamadas de API, validações ou efeitos colaterais.
+
+</details>
+
 ---
 
 ## 🧠 Sintaxe Básica
